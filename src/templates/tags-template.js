@@ -1,21 +1,21 @@
-import React from "react";
-import { Link, graphql } from "gatsby";
-import Layout from "../components/layout";
-import PostList from "../components/post-list";
-import StyledLink from "../components/styled-link";
-import styled from "styled-components";
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import Layout from '../components/layout';
+import PostList from '../components/post-list';
+import StyledLink from '../components/styled-link';
+import styled from 'styled-components';
 
 const TagsTemplate = ({ pageContext, data }) => {
   const { tag } = pageContext;
   const { totalCount } = data.allMarkdownRemark;
   const posts = data.allMarkdownRemark.nodes;
-  const title = `List terkait ${tag}`;
+  const title = `Posts tagged ${tag}`;
 
   return (
     <Layout title={title}>
       <TagsTemplateWrapper>
         <Title>
-          {totalCount} Layanan terkait "{tag}"
+          {totalCount} posts tagged "{tag}"
         </Title>
         <Link
           css={`
@@ -26,9 +26,8 @@ const TagsTemplate = ({ pageContext, data }) => {
           `}
           to="/tags"
         >
-          Lihat semua Tags
+          view all tags
         </Link>
-
         <PostList posts={posts} />
 
         <StyledLink
@@ -38,7 +37,7 @@ const TagsTemplate = ({ pageContext, data }) => {
           `}
           to="/tags"
         >
-          Lihat semua Tags
+          View All tags
         </StyledLink>
       </TagsTemplateWrapper>
     </Layout>
@@ -73,8 +72,8 @@ export const pageQuery = graphql`
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
           description
+          tags
           title
-          tujuan
         }
         timeToRead
         excerpt

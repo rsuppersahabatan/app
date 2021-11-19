@@ -1,10 +1,11 @@
-import React from "react";
-import styled from "styled-components";
-import Tags from "./tags";
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'gatsby';
+import Tags from './tags';
 
 const PostList = ({ posts }) => {
   const PostList = posts.map(({ frontmatter, fields, excerpt, timeToRead }) => {
-    const { title, tags, date, description, tujuan } = frontmatter;
+    const { title, tags, date, description } = frontmatter;
     const { slug } = fields;
 
     return (
@@ -12,7 +13,6 @@ const PostList = ({ posts }) => {
         key={slug}
         tags={tags}
         title={title}
-        tujuan={tujuan}
         date={date}
         slug={slug}
         timeToRead={timeToRead}
@@ -29,33 +29,30 @@ export default PostList;
 
 const PostListItem = ({
   title,
-  tujuan,
-  // date,
-  // timeToRead,
+  date,
+  timeToRead,
   tags,
   excerpt,
   description,
-  // slug,
+  slug,
 }) => {
   return (
     <StyledPostListItem>
       <Tags tags={tags} />
 
-      <PostListTitle>{title}</PostListTitle>
-
-      <a href={tujuan} target="_blank" rel="noreferrer">
-        <PostListExcerpt
-          dangerouslySetInnerHTML={{
-            __html: description || excerpt,
-          }}
-        />
-      </a>
-
-      {/* <PostListMeta>
+      <PostListTitle>
+        <Link to={slug}>{title}</Link>
+      </PostListTitle>
+      <PostListExcerpt
+        dangerouslySetInnerHTML={{
+          __html: description || excerpt,
+        }}
+      />
+      <PostListMeta>
         <span>{date}</span>
 
         <span>{timeToRead} mins</span>
-      </PostListMeta> */}
+      </PostListMeta>
     </StyledPostListItem>
   );
 };
@@ -98,6 +95,7 @@ const StyledPostListItem = styled.li`
 
 const PostListTitle = styled.h2`
   line-height: 1.2;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   text-transform: capitalize;
   font-size: var(--size-600);
@@ -109,7 +107,7 @@ const PostListTitle = styled.h2`
   }
 
   & a::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     bottom: 0;
@@ -123,10 +121,10 @@ const PostListExcerpt = styled.p`
   font-size: var(--size-400);
 `;
 
-// const PostListMeta = styled.div`
-//   margin-top: 2rem;
+const PostListMeta = styled.div`
+  margin-top: 2rem;
 
-//   font-size: var(--size-300);
-//   display: flex;
-//   justify-content: space-between;
-// `;
+  font-size: var(--size-300);
+  display: flex;
+  justify-content: space-between;
+`;

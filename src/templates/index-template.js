@@ -1,9 +1,9 @@
-import React from "react";
-import { graphql, Link } from "gatsby";
-import Layout from "../components/layout";
-import PostList from "../components/post-list";
-import styled from "styled-components";
-import StyledLink from "../components/styled-link";
+import React from 'react';
+import { graphql } from 'gatsby';
+import Layout from '../components/layout';
+import PostList from '../components/post-list';
+import styled from 'styled-components';
+import StyledLink from '../components/styled-link';
 
 const HomePage = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes;
@@ -12,25 +12,11 @@ const HomePage = ({ data }) => {
 
   return (
     <Layout title={title}>
-
-      <Link to="/" 
-        css={`
-        color: inherit;
-        background-color: rgba(255, 255, 255, 0.4);
-        text-decoration: none;
-
-        &:focus, &:hover, &:visited, &:link, &:active {
-            text-decoration: none;
-        }
-        `}>
-    
-        <Intro
-          dangerouslySetInnerHTML={{
-            __html: intro,
-          }}
-        />
-
-      </Link>
+      <Intro
+        dangerouslySetInnerHTML={{
+          __html: intro,
+        }}
+      />
 
       <PostList posts={posts} />
       <StyledLink
@@ -42,9 +28,9 @@ const HomePage = ({ data }) => {
           margin-right: auto;
           width: fit-content;
         `}
-        to="/list"
+        to="/blog"
       >
-        Lihat Semua Layanan
+        View All posts
       </StyledLink>
     </Layout>
   );
@@ -59,7 +45,7 @@ const Intro = styled.div`
   align-items: center;
   margin-right: auto;
   margin-left: auto;
-  margin-top: var(--size-500);
+  margin-top: var(--size-800);
   margin-bottom: var(--size-900);
   text-align: center;
 
@@ -74,8 +60,6 @@ const Intro = styled.div`
     }
   }
 `;
-
-
 
 export const pageQuery = graphql`
   query($slug: String!) {
@@ -99,7 +83,7 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           description
           title
-          tujuan
+          tags
         }
       }
     }
@@ -107,7 +91,6 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        tujuan
       }
     }
   }

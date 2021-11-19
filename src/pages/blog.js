@@ -1,17 +1,16 @@
-import React from "react";
-import { graphql, Link } from "gatsby";
-import Layout from "../components/layout";
-import PostList from "../components/post-list";
-import StyledLink from "../components/styled-link";
-import styled from "styled-components";
+import React from 'react';
+import { graphql, Link } from 'gatsby';
+import Layout from '../components/layout';
+import PostList from '../components/post-list';
+import styled from 'styled-components';
 
-const List = ({ data }) => {
+const Blog = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes;
 
   return (
-    <Layout title="List">
+    <Layout title="Blog">
       <HeaderWrapper>
-        <h1>List</h1>
+        <h1>Blog</h1>
 
         <Link
           css={`
@@ -21,27 +20,16 @@ const List = ({ data }) => {
           `}
           to="/tags"
         >
-          Lihat Semua Tags
+          view all tags
         </Link>
       </HeaderWrapper>
 
       <PostList posts={posts} />
-
-      <StyledLink
-          css={`
-            margin-top: var(--size-400);
-            display: inline-block;
-          `}
-          to="/"
-        >
-          Kembali Ke Beranda
-      </StyledLink>
-
     </Layout>
   );
 };
 
-export default List;
+export default Blog;
 
 const HeaderWrapper = styled.div`
   display: flex;
@@ -75,7 +63,7 @@ export const homePageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           description
           title
-          tujuan
+          tags
         }
       }
     }

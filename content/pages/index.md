@@ -1,8 +1,8 @@
 ---
-template: "index-template"
-title: "Pendaftaran Online RSUP Persahabatan"
+template: 'index-template'
+title: 'Gatsby Starter Glass'
 ---
 
-#RSUP Persahabatan
+#Hello World
 
-Pendaftaran Online Rumah Sakit Umum Pusat Persahabatan.
+A minimal & beautiful gatsby personal blog starter with nice glassmorphism UI.

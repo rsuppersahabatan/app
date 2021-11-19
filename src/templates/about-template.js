@@ -1,8 +1,8 @@
-import React from "react";
-import Layout from "../components/layout";
-import { graphql } from "gatsby";
-import styled from "styled-components";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import React from 'react';
+import Layout from '../components/layout';
+import { graphql } from 'gatsby';
+import styled from 'styled-components';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const AboutTemplate = ({ data }) => {
   const { html, frontmatter } = data.markdownRemark;
@@ -61,13 +61,12 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        profile_image {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, formats: PNG, height: 400)
+          }
+        }
       }
     }
   }
 `;
-
-// profile_image {
-//   childImageSharp {
-//     gatsbyImageData(placeholder: BLURRED, formats: PNG, height: 400)
-//   }
-// }

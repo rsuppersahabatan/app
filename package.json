@@ -1,15 +1,14 @@
 {
-  "name": "gatsby-landing-pendaftaran",
+  "name": "gatsby-starter-glass",
   "private": true,
-  "description": "Halaman Landing Pendaftaran RSUP Persahabatan",
-  "version": "0.0.1",
-  "author": "Topidesta",
+  "description": "A minimal & beautiful gatsby personal blog starter with a nice glassmorphism UI.",
+  "version": "1.0.0",
+  "author": "Yinka Adedire <yinkakun@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",
     "gatsby": "^3.0.1",
     "gatsby-plugin-feed": "^3.0.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
-    "gatsby-plugin-google-gtag": "^3.13.0",
     "gatsby-plugin-image": "^1.0.0",
     "gatsby-plugin-manifest": "^3.0.0",
     "gatsby-plugin-netlify-cms": "^5.0.0",
@@ -38,23 +37,21 @@
   "devDependencies": {
     "prettier": "2.2.1"
   },
-  "homepage": "https://github.com/rsuppersahabatan/landingpendaftaran#readme",
+  "homepage": "https://github.com/yinkakun/gatsby-starter-glass#readme",
   "keywords": [
     "gatsby",
-    "netlify cms",
-    "rsup persahabatan"
+    "netlify cms"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rsuppersahabatan/landingpendaftaran.git"
+    "url": "git+https://github.com/yinkakun/gatsby-starter-glass.git"
   },
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
-    "apdet": "gatsby clean && gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "npm run dev",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"

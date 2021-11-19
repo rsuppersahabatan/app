@@ -5,7 +5,7 @@ const toKebabCase = (str) => {
   return str
     .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
     .map((x) => x.toLowerCase())
-    .join("-");
+    .join('-');
 };
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
@@ -128,15 +128,15 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value: fileNode.sourceInstanceName,
     });
 
-    if (fileNode.sourceInstanceName === "posts") {
+    if (fileNode.sourceInstanceName === 'posts') {
       createNodeField({
         name: `slug`,
         node,
-        value: `/list${relativeFilePath}`,
+        value: `/blog${relativeFilePath}`,
       });
     }
 
-    if (fileNode.sourceInstanceName === "pages") {
+    if (fileNode.sourceInstanceName === 'pages') {
       createNodeField({
         name: `slug`,
         node,
@@ -174,7 +174,6 @@ exports.createSchemaCustomization = ({ actions }) => {
       title: String
       description: String
       date: Date @dateformat
-      tujuan: String
       template: String
       tags: [String!]
     }

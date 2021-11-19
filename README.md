@@ -1,21 +1,29 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0549ef54-5efa-487b-b98c-6adf7ce549f2/deploy-status)](https://app.netlify.com/sites/landingpendaftaran/deploys)
+# Gatsby Starter Glass
 
-# RSUP Persahabatan Landing Pendaftaran
+A Minimal & Beautiful Gatsby Personal Blog Starter With Nice Glassmorphism UI.
 
-Landing Pendaftaran RSUP Persahabatan
+[View Live Demo](https://gatsbyglass.netlify.app)
 
-![demo site screenshot](./screenshoot.png)
+![demo site screenshot](./screenshot.png)
 
-[View Live Demo](https://pendaftaran.rsuppersahabatan.co.id/)
+## Features
+
+* Fully responsive
+* SEO metadata and Open Graph tags
+* Maximized lighthouse score
+* Contact form with Netlify Form
+* Edit Content with Netlify CMS
+* Easy to deploy
+* Syntax highlighting via PrismJS
 
 ## Local Install
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/rsuppersahabatan/landingpendaftaran
+git clone https://github.com/yinkakun/gatsby-starter-glass
 
 # 2. Navigate into repository
-cd landingpendaftaran
+cd gatsby-starter-glass
 
 # 3. Install the dependencies
 yarn install
@@ -36,16 +44,15 @@ Within gatsby-config.js, you can specify information about your site (metadata) 
 
 module.exports = {
   siteMetadata: {
-    title: `Pendaftaran RSUP Persahabatan`,
+    title: `Gatsby Starter Glass`,
     author: {
-      name: `Topidesta`,
-      summary: `Fullstack Developer in-mind.`,
+      name: `Yinka Adedire`,
+      summary: `self-taught front-end dev. jamstack enthusaist.`,
     },
-    tujuan: ``,
     description: `A Minimal & Beautiful Gatsby Personal Blog Starter With Nice Glassmorphism Ui.`,
-    siteUrl: `https://pendaftaran.rsuppersahabatan.co.id`,
+    siteUrl: `https://gatsbyglass.netlify.app`,
     social: {
-      twitter: `rs_persahabatan`,
+      twitter: `yinkakun`,
     },
   },
 
@@ -72,9 +79,8 @@ Blog contents can be updated in markdown format at `content/blog`. Delete placeh
 ```md
 ---
 title: Hello World
-date: "2021-05-01"
-description: "Hello World"
-tujuan: url
+date: '2021-05-01'
+description: 'Hello World'
 ---
 
 This top portion is the beginning of the post and will show up as the excerpt on the homepage.
@@ -94,7 +100,7 @@ You’ll need to set up Netlify’s Identity service to authorize users to log i
 - Go to Identity and click Enable Identity.
 - Click on Invite Users and invite yourself. You will receive an email and you need to accept the invitation to set the password.
 - Now headover to Settings > Identity > Services and Enable Git Gateway.
-- You can also manage who can register and log in to your CMS. Go to Settings > Identity > Registration Registration Preferences. I would prefer to keep it to Invite Only if I am the only one using it.
+- You can also manage who can register and log in to your CMS. Go to Settings > Identity > Registration  Registration Preferences. I would prefer to keep it to Invite Only if I am the only one using it.
 - Now, go to to site-name.netlify.app/admin/, and login with your credentials.
 
 Once you are in your Netlify CMS, you can navigate to Posts and Pages. Here you will find a list of existing pages and posts.
@@ -104,7 +110,3 @@ Once you are in your Netlify CMS, you can navigate to Posts and Pages. Here you 
 - Gatsby for Static Site Generation
 - Netlify CMS for content management
 - Styled Component for styling
-
-## Sourecode
-
-- https://github.com/yinkakun/gatsby-starter-glass.git
