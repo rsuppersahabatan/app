@@ -29,6 +29,10 @@ module.exports = {
         name: "instagram",
         url: "https://www.instagram.com/rs_persahabatan/?hl=en",
       },
+      {
+        name: "cms",
+        url: "https://app.rsuppersahabatan.co.id/admin/#/",
+      },
     ],
   },
   plugins: [
