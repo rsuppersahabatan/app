@@ -1,27 +1,33 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Glass`,
+    title: `Daftar Aplikasi`,
     author: {
-      name: `Yinka Adedire`,
-      summary: `Self-taught front-end web dev. JAMStack.`,
+      name: `RSUP PERSAHABATAN`,
+      summary: `Menjadi Rumah Sakit Pusat Respirasi Terkemuka di Asia Pasifik`,
     },
-    description: `A minimal & beautiful gatsby personal blog starter with a nice glassmorphism UI.`,
-    siteUrl: `https://gatsbyglass.netlify.app`,
+    description: `Menjadi Rumah Sakit Pusat Respirasi Terkemuka di Asia Pasifik.`,
+    siteUrl: `https://app.rsuppersahabatan.co.id/`,
     social: {
-      twitter: `yinkakun`,
+      twitter: `rs_persahabatan`,
+      youtube: `rs_persahabatan`,
+      instagram: `rs_persahabatan`,
     },
     socialLinks: [
       {
         name: 'github',
-        url: 'https://github.com',
+        url: 'https://github.com/rsuppersahabatan',
       },
       {
-        name: 'twitter',
-        url: 'https://twitter.com',
+        name: "youtube",
+        url: "https://www.youtube.com/channel/UCYs6Gwc15B7dXJnqU85CVSA",
       },
       {
-        name: 'instagram',
-        url: 'https://instagram.com',
+        name: "twitter",
+        url: "https://twitter.com/rs_persahabatan?lang=en",
+      },
+      {
+        name: "instagram",
+        url: "https://www.instagram.com/rs_persahabatan/?hl=en",
       },
     ],
   },

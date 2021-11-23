@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-glass",
+  "name": "app",
   "private": true,
-  "description": "A minimal & beautiful gatsby personal blog starter with a nice glassmorphism UI.",
+  "description": "Menjadi Rumah Sakit Pusat Respirasi Terkemuka di Asia Pasifik.",
   "version": "1.0.0",
-  "author": "Yinka Adedire <yinkakun@gmail.com>",
+  "author": "Desta <desta@rsuppersahabatan.co.id>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",
     "gatsby": "^3.0.1",
@@ -37,7 +37,7 @@
   "devDependencies": {
     "prettier": "2.2.1"
   },
-  "homepage": "https://github.com/yinkakun/gatsby-starter-glass#readme",
+  "homepage": "https://github.com/rsuppersahabatan/app#readme",
   "keywords": [
     "gatsby",
     "netlify cms"
@@ -45,7 +45,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yinkakun/gatsby-starter-glass.git"
+    "url": "git+https://github.com/rsuppersahabatan/app.git"
   },
   "scripts": {
     "build": "gatsby build",
