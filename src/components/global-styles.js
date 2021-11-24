@@ -106,7 +106,7 @@ body {
   color: #37292C;
   background-attachment: fixed;
   background-color: #C1F1FC;
-  background-image: linear-gradient(315deg, #4396D2 0%, #3AAF4B 74%);
+  background-image: linear-gradient(315deg, #3AAF4B 0%, #4396D2 74%);
 
 }
 
