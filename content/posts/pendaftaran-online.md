@@ -2,13 +2,13 @@
 title: Pendaftaran Online
 date: 2021-11-24 15:33
 tags:
-  - Pendaftaran
+  - umum
 social_image: /media/pendaftaran-online.png
 description: Halaman Pendaftaran Online.
 ---
 Pendaftaran Onlie RSUP Persahabatan.
 
-## Image
+## Screenshoot
 
 ![Pendaftaran Online](/media/pendaftaran-online.png "Pendaftaran Online")
 
@@ -19,4 +19,4 @@ Pendaftaran Onlie RSUP Persahabatan.
 
 ## Halaman URL
 
-<https://rsuppersahabatan.co.id/pendaftaran/index.php/halaman/page_lain>
+[https://rsuppersahabatan.co.id/pendaftaran/index.php/halaman/page_lain](https://rsuppersahabatan.co.id/pendaftaran/index.php/halaman/page_lain)

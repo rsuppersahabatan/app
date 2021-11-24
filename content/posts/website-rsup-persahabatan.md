@@ -2,13 +2,13 @@
 title: Website RSUP Persahabatan
 date: 2021-01-21
 tags:
-  - profile
+  - umum
 social_image: /media/website.png
 description: Halaman Website Utama
 ---
 Website Utama RSUP Persahabatan.
 
-## Image
+## Screenshoot
 
 ![website launch](/media/website.png)
 
@@ -18,8 +18,6 @@ Website Utama RSUP Persahabatan.
 2. Codeigniter
 3. MYSQL
 
-
-
 ## Halaman URL
 
-<https://rsuppersahabatan.co.id/beranda>
+[https://rsuppersahabatan.co.id/beranda](https://rsuppersahabatan.co.id/beranda)

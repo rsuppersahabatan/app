@@ -2,13 +2,13 @@
 title: Informasi Tempat Tidur
 date: 2021-11-24 15:36
 tags:
-  - Pendaftaran
+  - umum
 social_image: /media/infobed-1.png
 description: Halaman Informasi Tempat Tidur.
 ---
 Informasi Tempat Tidur RSUP Persahabatan.
 
-## Image
+## Screenshoot
 
 ![Informasi Tempat Tidur 1](/media/infobed-1.png "Informasi Tempat Tidur 1")
 

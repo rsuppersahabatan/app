@@ -2,14 +2,14 @@
 title: Pencarian Dokter
 date: 2021-01-19
 tags:
-  - dokter
-  - website
+  - umum
+  - pegawai
 social_image: /media/dokter.png
 description: Halaman Pencarian Dokter.
 ---
 Dokter RSUP Persahabatan.
 
-## Image
+## Screenshoot
 
 ![dokter launch](/media/dokter.png)
 
@@ -19,7 +19,6 @@ Dokter RSUP Persahabatan.
 2. Codeigniter (Backend)
 3. Netlify.app (Builder)
 
+## Halaman URL
 
-
-## Halaman URL\
 [https://dokter.rsuppersahabatan.co.id](https://dokter.rsuppersahabatan.co.id/)
