@@ -4,14 +4,14 @@ date: 2021-01-19
 tags: 
   - dokter
   - website
-social_image: '/media/website.png'
+social_image: '/media/dokter.png'
 ---
 
-Website Utama RSUP Persahabatan.
+Dokter RSUP Persahabatan.
 
 ## Image
 
-![dokter launch](/media/website.png)
+![dokter launch](/media/dokter.png)
 
 ## Teknologi
 
