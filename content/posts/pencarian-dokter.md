@@ -1,12 +1,12 @@
 ---
 title: Pencarian Dokter
 date: 2021-01-19
-tags: 
+tags:
   - dokter
   - website
-social_image: '/media/dokter.png'
+social_image: /media/dokter.png
+description: Halaman Pencarian Dokter.
 ---
-
 Dokter RSUP Persahabatan.
 
 ## Image
@@ -15,6 +15,11 @@ Dokter RSUP Persahabatan.
 
 ## Teknologi
 
-1. Centos Server (Dedicated)
-2. Codeigniter
-3. MYSQL
+1. ReactJS (Frontend)
+2. Codeigniter (Backend)
+3. Netlify.app (Builder)
+
+
+
+## Halaman URL\
+[https://dokter.rsuppersahabatan.co.id](https://dokter.rsuppersahabatan.co.id/)
