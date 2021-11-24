@@ -1,5 +1,5 @@
 ---
-title: Informasi Tempat Tidur
+title: Informasi Bed
 date: 2021-11-24 15:36
 tags:
   - umum
