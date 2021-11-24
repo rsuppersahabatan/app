@@ -1,7 +1,7 @@
 ---
 title: About Mee
 template: about-template
-profile_image: ""
+profile_image: /media/profile-image.png
 ---
 
 # Hi, I'm John Doe
